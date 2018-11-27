@@ -1,6 +1,8 @@
 Here is my idea of a rough outline for how the site backend could work:
 
 
+__-_____Most basic features__________
+
 Main URLs (accessed directly by user):
 
 /index
@@ -33,3 +35,16 @@ Adds a point to the sighting with the given id. If we want to, we could make a c
 If we don't just use templates for this, then this call could return a list of recent animal sightings and relevant info in JSON format.
 
 
+
+
+_________More advanced features (if possible?)____________
+Main URLs (accessed directly by user):
+
+/user_sightings/{user_id}
+Lists sightings by a particular user. If we have this feature, then we could have entries on the 'recent sightings' page have links for the usernames that go to this page (for the appropriate user).
+
+/location_sightings/{location_id}
+Lists sightings in a particular location. If we have this feature, then we could have entries on the 'recent sightings' page have links for the location names that go to this page (for the appropriate location).
+
+/specific_animal_sightings/{animal_id}
+Lists sightings of a particular animal type. If we have this feature, then we could have entries on the 'recent sightings' page have links for the animal type names that go to this page (for the appropriate animal).
