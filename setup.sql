@@ -116,7 +116,7 @@ insert into animal values ('005','Rabit','Rabbits are small mammals in the famil
 
 
 
-insert into animal values ('006','Raccoon','The raccoon is a medium-sized mammal native to North America. The raccoon is the largest of the procyonid family, having a body length of 40 to 70 cm (16 to 28 in) and a body weight of 5 to 26 kg (11 to 57 lb). Its grayish coat mostly consists of dense underfur which insulates it against cold weather. Three of the raccoon's most distinctive features are its extremely dexterous front paws, its facial mask, and its ringed tail, which are themes in the mythologies of the indigenous peoples of the Americas. Raccoons are noted for their intelligence, with studies showing that they are able to remember the solution to tasks for at least three years.They are usually nocturnal and omnivorous, eating about 40% invertebrates, 33% plants, and 27% vertebrates.');
+insert into animal values ('006','Raccoon','The raccoon is a medium-sized mammal native to North America. The raccoon is the largest of the procyonid family, having a body length of 40 to 70 cm (16 to 28 in) and a body weight of 5 to 26 kg (11 to 57 lb). Its grayish coat mostly consists of dense underfur which insulates it against cold weather. Three of the raccoon\'s most distinctive features are its extremely dexterous front paws, its facial mask, and its ringed tail, which are themes in the mythologies of the indigenous peoples of the Americas. Raccoons are noted for their intelligence, with studies showing that they are able to remember the solution to tasks for at least three years.They are usually nocturnal and omnivorous, eating about 40% invertebrates, 33% plants, and 27% vertebrates.');
 
 
 
