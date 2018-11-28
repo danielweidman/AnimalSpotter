@@ -120,9 +120,6 @@ insert into animal values ('006','Raccoon','The raccoon is a medium-sized mammal
 
 
 
-insert into animal values ('006','Raccoon','The raccoon is a medium-sized mammal native to North America. The raccoon is the largest of the procyonid family, having a body length of 40 to 70 cm (16 to 28 in) and a body weight of 5 to 26 kg (11 to 57 lb). Its grayish coat mostly consists of dense underfur which insulates it against cold weather. Three of the raccoons most distinctive features are its extremely dexterous front paws, its facial mask, and its ringed tail, which are themes in the mythologies of the indigenous peoples of the Americas. Raccoons are noted for their intelligence, with studies showing that they are able to remember the solution to tasks for at least three years.They are usually nocturnal and omnivorous, eating about 40% invertebrates, 33% plants, and 27% vertebrates.');
-
-
 
 insert into animal values ('007','Owl','Owls are birds from the order Strigiformes, which includes about 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight. Exceptions include the diurnal northern hawk-owl and the gregarious burrowing owl. Owls hunt mostly small mammals, insects, and other birds, although a few species specialize in hunting fish. They are found in all regions of the Earth except polar ice caps and some remote islands.');
 
