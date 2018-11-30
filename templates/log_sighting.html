@@ -906,10 +906,22 @@ $(document).ready(function(){
 	 </g>
 	 </g>
 </svg>
-      <select id="Animal" onchange="onPatternTypeChange(this.id, this.value, f)">
-        <option value="Squeriel" selected="">Squeriel</option>
-        <option value="Rabbit" selected="">Rabbit</option>
-      </select>
-    </div>
-  </div>
+	    <select id="Animal" onchange="onPatternTypeChange(this.id, this.value, f)">
+		    <option value="Squeriel" selected="">Squeriel</option>
+		    <option value="Rabbit" selected="">Rabbit</option>
+	    </select>
+	    <textarea name="dscptn" rows="10" cols="40" placeholder="Describe your animal here, if you have anything to say">
+	    </textarea>
+	    <br>
+	    <button onclick="submission()">Submit</button>
+	    <script>
+		    function submission() {
+			    var a = document.getElementById("Place").value;
+			    var b = document.getElementById("Animal").value;
+			    var c = document.getElementById("dscptn").value;
+			    window.location.replace('/add_sighting_to_db/${b}/${a}/${c}/');
+		    }
+	    </script>
+	  </div>
+</div>
 {% endblock %}
