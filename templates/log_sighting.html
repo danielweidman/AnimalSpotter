@@ -3,35 +3,38 @@
 <script>
 $(document).ready(function(){
     $("#North Side").click(function(){
-        $("#Place").val("North Side");
+        $("#Place").text("North Side");
     });
     $("#University Center").click(function(){
-        $("#Place").val("University Center");
+        $("#Place").text("University Center");
     });
     $("#Wade Oval").click(function(){
-        $("#Place").val("Wade Oval");
+        $("#Place").text("Wade Oval");
     });
     $("#Lagoon").click(function(){
-        $("#Place").val("Lagoon");
+        $("#Place").text("Lagoon");
     });
     $("South Side").click(function(){
-        $("#Place").val("South Side");
+        $("#Place").text("South Side");
     });
     $("#Main Quad").click(function(){
-        $("#Place").val("Main Quad");
+        $("#Place").text("Main Quad");
     });
 });
 </script>
 </head>
-{% block title %}Dashboard{% endblock %}
+{% block title %}Log a sighting{% endblock %}
 
 {% block body %}
-  <h1 class="text-center">Dashboard</h1>
+  <h1 class="text-center">See something? Say something!</h1>
   <div class="row">
     <div class="col-sm-8 offset-sm-2">
       <p>Log a sighting</p>
-      <p>Here's the form so you can fill out the sighting information!</p>
-      <input type="hidden" id="Place" value="">
+	    <p>Here's the form so you can fill out the sighting information!</p>
+	    <strong>Select a location!</strong>
+	    <option id="Place" value=""></option>
+	    <br>
+		    
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" version="1.1" overflow="visible" width="570pt" height="750pt" viewBox="0 0 570 750">
  <defs>
 	</defs>
@@ -907,19 +910,21 @@ $(document).ready(function(){
 	 </g>
 </svg>
 	    <select id="Animal" onchange="onPatternTypeChange(this.id, this.value, f)">
-		    <option value="Squeriel" selected="">Squeriel</option>
-		    <option value="Rabbit" selected="">Rabbit</option>
+		    <option value="003" selected="">Squeriel</option>
+		    <option value="005" selected="">Rabbit</option>
 	    </select>
-	    <textarea name="dscptn" rows="10" cols="40" placeholder="Describe your animal here, if you have anything to say">
-	    </textarea>
+	    <br>
+	    <textarea name="dscptn" rows="10" cols="40" placeholder="Describe your animal here, if you have anything to say"></textarea>
 	    <br>
 	    <button onclick="submission()">Submit</button>
 	    <script>
 		    function submission() {
-			    var a = document.getElementById("Place").value;
+			    var a = document.getElementById("Place").text;
 			    var b = document.getElementById("Animal").value;
 			    var c = document.getElementById("dscptn").value;
-			    window.location.replace('/add_sighting_to_db/${b}/${a}/${c}/');
+			    if(a!=""&&b!=""&&c!=""){
+				    window.location.replace('/add_sighting_to_db/${b}/${a}/${c}/');
+			    }
 		    }
 	    </script>
 	  </div>
